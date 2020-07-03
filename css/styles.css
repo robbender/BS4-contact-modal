@@ -26,3 +26,7 @@ body {
 .form-control::-webkit-input-placeholder {
   color: #999;
 }
+
+/* input:required {
+  background-color:##90EE90;
+} */

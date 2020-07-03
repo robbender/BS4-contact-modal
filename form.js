@@ -35,9 +35,10 @@ $(document).ready(function() {
 
             $(this).off('hidden.bs.modal') // Remove the 'on' event binding
               .find('form')[0].reset();
+            // $("form")[0].reset();
           });
         console.log("sent");
-      };
+      }
       // Reset on Response close button
       // Clear Form
       $.clearInput = function() {
@@ -54,6 +55,13 @@ $(document).ready(function() {
       console.log("reset");
     });
   });
+
+  // On close clear form
+  // $('#response').off('hidden.bs.modal', function() {
+  //   $.clearInput();
+  //   console.log("cleared");
+  //   window.location.reload();
+  // });
 
   // First Modal action with one modal
   // $('.modal').on('hidden.bs.modal', function() {
